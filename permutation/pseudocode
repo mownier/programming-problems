@@ -1,0 +1,35 @@
+perm("CAT") length:3
+	index = 0
+		"C" + perm("AT") length:2
+				index = 0
+				"A" + perm("T") length:1
+						"T" 
+					+ return array
+				index = 1
+				"T" + perm("A") length:1
+						"A"
+					+ return array
+			+ return array			
+	index = 1
+		"A" + perm("CT") length:2
+				index = 0
+				"C" + perm("T") length:1
+						"T"
+					+ return array
+				index = 1
+				"T" + perm("C") length:1
+						"C" 
+					+ return array
+			+ return array
+	index = 2
+		"T" + perm("CA") length:2
+				index = 0
+				"C" + perm("A") length:1
+						"A"
+					+ return array
+				index = 1
+				"A" + perm("C") length:1
+						"C"
+					+ return array
+			+ return array
+return array
